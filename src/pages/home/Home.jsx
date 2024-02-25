@@ -12,6 +12,12 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
+  useEffect(() => {
+    backgrounds.forEach((img) => {
+      const image = new Image();
+      image.src = img;
+    });
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
