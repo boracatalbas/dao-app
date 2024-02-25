@@ -1,0 +1,50 @@
+.speakers-all {
+  padding: 0 10vw 0 10vw;
+  background-color: #050237;
+  color: white;
+  height: 130vh;
+
+  .speakers {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    .speaker {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        height: 34vh;
+        border-radius: 10px;
+      }
+      .bot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vh;
+        h2 {
+          color: #eaeaea;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        h3 {
+          color: #a4a4a4;
+          font-weight: bold;
+          margin-top: 1vh;
+          font-size: 1.1rem;
+        }
+        .bot-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 15vw;
+          svg {
+            height: 3vh;
+          }
+        }
+      }
+    }
+  }
+}
