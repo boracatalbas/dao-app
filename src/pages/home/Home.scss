@@ -1,0 +1,56 @@
+.app {
+  color: white;
+  .header {
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    padding: 0 10vw 0 10vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    justify-content: center;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-right: 40vw;
+      }
+      h3 {
+        font-size: 1.1rem;
+        opacity: 60%;
+      }
+    }
+
+    .buttons {
+      margin-top: 10vh;
+      .sponsor {
+        margin-left: 1vw;
+      }
+      button {
+        border: solid 1px white;
+
+        background-color: transparent;
+        color: white;
+        padding: 1.5vh 2.5vw;
+        font-size: 1.1rem;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        &:hover {
+          background-color: white;
+          color: black;
+          transition: ease-in-out 0.5s;
+          a {
+            color: black;
+            transition: ease-in-out 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
